@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: beige;
+    font-family: cursive;
+}
+
+header img {
+  border-radius: 20px 60px;
+  -webkit-mask-image: linear-gradient(black 0%, transparent 100%);
+}
+
+.navbar {
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 50% 80% / 70% 10%;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);;
+}
+
+.navbar ul{
+    display: flex; /*horyzontal layout*/
+    gap: 20px; /*space between links*/
+}
+
+.navbar ul li {
+    position: relative; /*for the underline effect*/
+}
+
+.navbar ul li a {
+    color: beige;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: cyan;
+}
