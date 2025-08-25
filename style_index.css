@@ -1,13 +1,25 @@
+
 body {
     background-color: black;
     color: beige;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;        /* tot textul are aceeași dimensiune */
+  line-height: 1.6;       /* spațiu între rânduri */
 }
 
 header img {
   border-radius: 20px 60px;
   -webkit-mask-image: linear-gradient(black 0%, transparent 100%);
 }
+
+p, li {
+  margin-bottom: 12px;
+}
+
+section, article, aside, footer {
+  max-width: 800px;   /* textul nu depășește o lățime, e mai plăcut la citit */
+  margin: 20px auto;  /* centrează conținutul */
+  padding: 0 15px;}
 
 .navbar {
     background-color: black;
