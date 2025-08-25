@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: beige;
-    font-family: cursive;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header img {
@@ -13,16 +13,24 @@ header img {
     background-color: black;
     padding: 15px 30px;
     border-radius: 50% 80% / 70% 10%;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    overflow-x: auto;       /* scroll orizontal pe mobil */
+white-space: nowrap;    /*împiedică să sară pe rând nou */
 }
 
 .navbar ul{
     display: flex; /*horyzontal layout*/
     gap: 20px; /*space between links*/
+    width: fit-content;
+    justify-content: center;   /* centrează meniul */
+align-items: center;       /* aliniere verticală */
+margin: 0;                 /*  scos marginile implicite */
+padding: 0;                /* scos padding-ul implicit */
 }
 
 .navbar ul li {
     position: relative; /*for the underline effect*/
+    margin: 0 15px;   /* spațiere simplă între elemente */
 }
 
 .navbar ul li a {
@@ -31,7 +39,17 @@ header img {
     font-size: 18px;
     padding: 8px 12px;
     transition: color 0.3s ease;
+    border-radius: 8px;          /*colțuri rotunjite pe hover */
+transition: background 0.3s; /*efect background smooth */
 }
 .navbar ul li a:hover {
     color: cyan;
+    background: teal;   /* fundal colorat când treci cu mouse-ul */
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
 }
